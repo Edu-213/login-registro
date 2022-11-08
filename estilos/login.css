@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor0: #e0daf7;
+    --cor1: #00caf8;
+    --cor2: #027fe9;
+    --cor3: #5015bd;
+    --cor4: #3d0a49;
+}
+
+body {
+    background-color: var(--cor0);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    overflow: hidden;
+
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+#formulario {
+    display: block;
+    padding: 10px;
+}
+
+#titulo {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 128);
+}
+
+.campo {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 12px 15px;
+}
+
+.campo > label {
+    display: none;
+}
+
+.campo > input {
+    font-size: 1em;
+    width: calc(100% - 42px);
+    height: 100%;
+    padding: 3px;
+}
+
+form > input[type=submit] {
+    width: 350px;
+    height: 100%;
+    padding: 13px 0px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 1em;
+    background-color: rgb(46, 101, 202);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+form > input[type=submit]:hover {
+    background-color: rgb(10, 98, 214);
+}
+
+#esqueci {
+    color: rgb(160, 160, 160);
+    padding-left: 270px;
+    font-size: 13px;
+}
+
+.plataforma {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    margin-left: 15px;
+    margin-top: 10px; 
+    border: 1px solid black;
+    text-align: center;
+}
+
+#face {
+    color: #3563a1;
+    font-weight: bold;
+}
+
+#google {
+    color: #f12f19;
+    font-weight: bold;
+}
+
+.plataforma > a {
+    text-decoration: none;
+}
+
+

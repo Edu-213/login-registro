@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/login.css">
     <title>Login</title>
 </head>
 <body>
     <main>
-        <section>
+        <section id="login">
             <div id="formulario">
-                <h1>Fazer Login</h1>
+                <h1 id="titulo">Fazer Login</h1>
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <input type="email" name="login" id="ilogin" autocomplete="email" placeholder="Seu email" required>
+                        <input type="email" name="login" id="ilogin" autocomplete="email" placeholder="E-mail, CPF ou CNPJ" required>
                         <label for="ilogin">Login</label>
                     </div>
                     <div class="campo">
-                        <input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder="Sua senha" required minlength="8">
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder=" Senha" required minlength="8">
                         <label for="isenha">Senha</label>
                     </div>
 
-                    <input type="submit" value="Entrar">
-                    <a href="#">Esqueci a senha</a>
-                    <div class="plataformas">
-                        <a href="#">
-                            <img src="#" alt="Facebook logo">
-                            Facebook
-                        </a>
-                        <a href="#">
-                            <img src="#" alt="Google logo">
-                            Google
-                        </a>
+                    <input type="submit" value="ENTRAR">
+                    <a href="#" id="esqueci">Esqueci a senha</a>
+                    <div class="plataforma">
+                        <img src="./imagens/face-logo.png" alt="Facebook logo">
+                        <a href="#" id="face">Facebook</a>
+                    </div>
+                    <div class="plataforma">
+                        <img src="./imagens/google-logo.png" alt="Google logo">
+                        <a href="#" id="google">Google</a>
                     </div>
 
                 </form>
             </div>
         </section>
+        <p>Novo no Site? <a href="#">CADASTRE-SE</a></p>
     </main>
 </body>
 </html>
