@@ -124,6 +124,7 @@ form > input[type=submit]:hover {
 
 .plataforma > a {
     text-decoration: none;
+    padding: 1px;
 }
 
 
