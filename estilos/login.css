@@ -9,7 +9,7 @@
 :root {
     --cor0: #e0daf7;
     --cor1: #00caf8;
-    --cor2: #027fe9;
+    --cor2: #0062b8;
     --cor3: #5015bd;
     --cor4: #3d0a49;
 }
@@ -35,7 +35,7 @@ main {
 
     background-color: white;
     width: 400px;
-    height: 500px;
+    height: 430px;
     border: 1px solid rgb(107, 107, 107);
     border-radius: 7px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -54,7 +54,7 @@ main {
     text-align: center;
     padding: 20px;
     margin-bottom: 10px;
-    color: rgb(0, 0, 128);
+    color: var(--cor2);
 }
 
 .campo {
@@ -79,9 +79,11 @@ form > input[type=submit] {
     width: 350px;
     height: 100%;
     padding: 13px 0px;
-    margin-top: 10px;
+
+    margin-top: 15px;
     margin-left: 15px;
     font-size: 1em;
+    text-transform: uppercase;
     background-color: rgb(46, 101, 202);
     color: white;
     font-weight: bold;
@@ -93,38 +95,69 @@ form > input[type=submit]:hover {
     background-color: rgb(10, 98, 214);
 }
 
-#esqueci {
+#esqueceu {
     color: rgb(160, 160, 160);
-    padding-left: 270px;
+    padding-left: 250px;
     font-size: 13px;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: row;
 }
 
 .plataforma {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    width: 350px;
-    margin-left: 15px;
-    margin-top: 10px; 
-    border: 1px solid black;
+    width: 160px;
+
+    margin-left: 20px;
+    margin-top: 20px; 
+
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    border-radius: 20px;
+
     text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.plataforma > img {
+    height: 75%;
 }
 
 #face {
     color: #3563a1;
-    font-weight: bold;
+    padding: 10px;
 }
 
 #google {
     color: #f12f19;
-    font-weight: bold;
+    padding: 5px;
 }
 
 .plataforma > a {
     text-decoration: none;
-    padding: 1px;
+
+}
+
+.cadastro {
+    position: relative;
+    top: 90%;
+    text-align: center;
+}
+
+.text {
+    color: rgb(109, 109, 109);
+    font-size: 17px;
+}
+
+.text > a {
+    color: var(--cor2);
+    font-weight: bold;
 }
 
 
